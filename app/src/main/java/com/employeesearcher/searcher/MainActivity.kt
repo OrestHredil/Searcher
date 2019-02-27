@@ -1,7 +1,8 @@
 package com.employeesearcher.searcher
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
+import butterknife.OnClick
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,4 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
+    @OnClick(R.id.welcome)
+    fun onWelcomeClick() {
+        SearchingActivity.launch(this)
+    }
+
 }
