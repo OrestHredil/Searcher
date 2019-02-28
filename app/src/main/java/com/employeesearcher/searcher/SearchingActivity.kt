@@ -16,7 +16,6 @@ class SearchingActivity : BaseActivity() {
         setContentView(R.layout.activity_search)
     }
 
-
     companion object {
         fun launch(fromActivity: Activity) {
             val intent = Intent(fromActivity, SearchingActivity::class.java)
