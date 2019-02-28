@@ -1,4 +1,10 @@
 package com.employeesearcher.searcher
 
-class SearchingFragment {
+import com.employeesearcher.searcher.base.BaseFragment
+
+class SearchingFragment : BaseFragment() {
+
+    companion object {
+        fun newInstance() = SearchingFragment()
+    }
 }
